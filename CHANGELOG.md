@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+### Misc
+* Add copywriting for portal's user profile
+
 ## 1.1.13 (Apr 21, 2026)
 ### Misc
 * Add copywriting for accepting all incoming changes button in dbdocs publish modal

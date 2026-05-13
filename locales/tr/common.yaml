@@ -13,6 +13,8 @@ common:
     export: Dışa Aktar # Export icon in header dropdown (opens export options)
     ok: Tamam # Simple acknowledgment button in alerts
     submit: Gönder # Form submission button (submits form data)
+    save: Kaydet
+    next: İleri
 
   # ========================================
   # Help menu - Top-right help icon (?) dropdown in header
@@ -107,6 +109,7 @@ common:
   # ========================================
   states:
     empty: Veri Yok # Empty table/list message (centered)
+    loading: Yükleniyor...
 
   # ========================================
   # Code editor - Right panel DBML code editor
