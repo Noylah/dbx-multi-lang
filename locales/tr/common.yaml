@@ -24,7 +24,6 @@ common:
     documentation: Dokümantasyon # External link to docs.dbdiagram.io
     releaseNotes: Sürüm Notları # Link to changelog page
     roadmap: Ürün Yol Haritası # Link to feature roadmap (publicly visible)
-    basicEditing: Temel Düzenleme Deneyimi # Link to editing guide documentation
     sendFeedback: Geri Bildirim Gönder # Link to feedback form (opens modal)
     askCommunity: Topluluğa Sor # Link to Discord/community forum
     suggestFeature: Özellik Öner # Link to feature request board
