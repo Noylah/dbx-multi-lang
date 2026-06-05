@@ -163,7 +163,7 @@ dbrenderer:
       title: İndir
       tooltip: CSV olarak indir
   # ========================================
-  # Note Preview Modal - Preview/edit markdown note
+  # View note modal - Preview markdown note
   # ========================================
   viewNoteModal:
     infoTooltip: Markdown ile biçimlendirme desteklenmektedir
