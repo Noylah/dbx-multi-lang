@@ -95,7 +95,7 @@ modals:
       viewOnly: El permiso de este usuario está limitado solo a visualización. # Permission tooltip
       upgradePersonal: Para habilitar la colaboración de edición, por favor mejora tu espacio de trabajo personal. # Upgrade tooltip
       freeAccount: Este usuario tiene una cuenta <b>gratuita</b>. # Free account tooltip
-      editAfterUpgrade: Se le permitirá <b>editar</b> el diagrama después de que su cuenta sea mejorada. # Upgrade tooltip
+      editAfterUpgrade: Se te permitirá <b>editar</b> el diagrama después de que tu cuenta sea mejorada. # Upgrade tooltip
       collaborationLimit: Solo puedes colaborar con # Collaboration limit text
       diagramLimit: Hasta 4 usuarios gratuitos en cada diagrama (actualmente {count} usuarios) # Diagram limit text
       workspaceLimit: Hasta 6 usuarios gratuitos en todos los diagramas (actualmente {count} usuarios) # Workspace limit text
