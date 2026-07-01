@@ -1,0 +1,172 @@
+# Account translations - Manage Account modal and Change Email flow
+# UI Areas: Manage Account modal, Change Email modal (stepper flow)
+
+account:
+  # ========================================
+  # Account page
+  # ========================================
+  page:
+    title: Manage your dbx account
+    description: "Any changes you make here will be reflected in all three services:"
+    authenticating: Authenticating...
+
+  # ========================================
+  # Manage Account modal - Account settings overview
+  # ========================================
+  manage:
+    loadingInfo: Loading account information... # Loading spinner text
+    displayName: Display Name # Label for display name field
+    email: Email # Label for email field
+
+    # Connected accounts section
+    connectedAccounts:
+      title: Connected Accounts # Section title
+      noAccounts: No connected accounts # Empty state text
+      loggedInWith: Logged in with {provider} # Provider badge label (e.g., "Logged in with Google")
+
+    # Manage account section
+    manageTitle: Manage Account # Section title
+    changeEmail: Change email address # Change email button label
+    changeEmailInProgress: You have an email change in progress, please wait # Disabled message when email change is in progress
+    changeEmailFailed: "Your last email change failed, please contact our support at dbdiagram@holistics.io" # Disabled message when last email change failed
+
+    # Account removal
+    removal:
+      removeAccount: Remove account # Remove account button label
+      cancelRequest: Cancel removal request # Cancel removal request button label
+      removedAfter: "Your account will be removed after {time}." # Removal countdown text
+      aFewHours: a few hours # Time label when less than 1 day remaining
+      aDay: a day # Time label when exactly 1 day remaining
+      days: "{count} days" # Time label for multiple days remaining
+      cancelSuccess: Removal request was canceled successfully! # Success toast after canceling
+      status:
+        inProgressTitle: Your account removal is in progress.
+        inProgressDescription: This may take a few moments. You can safely close this window — the process will continue in the background.
+        completedTitle: Your account has been successfully removed.
+        completedDescription: "You can safely close this window. Note: You won't be logged out automatically. Please log out from other devices manually."
+        failedTitle: Account removal failed.
+        failedContactSupport: Please contact our support team at
+
+    notifications:
+      profileUpdated: User profile updated successfully.
+      profileImageUpdated: User profile image updated successfully.
+    profileImage:
+      title: User Profile Image
+      switchToGravatar: Switch to Gravatar's profile image
+      switchToGravatarHint: To change your user avatar, please switch to Gravatar's profile image.
+      redirectingToGravatar: Redirecting to Gravatar...
+      changeOnGravatar: Change Profile Image on Gravatar
+      doneUploading: Done uploading your image on Gravatar?
+      gravatarHint: Log in to Gravatar with your email to change your profile picture.
+      refresh: Refresh your profile image
+    userInfo:
+      title: User Information
+    dangerZone:
+      title: Danger Zone
+    errors:
+      sessionExpired: Session expired, please log in again.
+      updateProfileFailed: Failed to update user profile, please try again.
+      loadProfileFailed: Failed to load user profile, please try to refresh the page.
+      updateProfileImageFailed: Failed to update user profile image, please try again.
+      cancelRemovalFailed: Failed to cancel account removal request, please try again.
+
+  # ========================================
+  # Remove Account modal - 3-step account removal flow
+  # ========================================
+  removeAccountModal:
+    title: Remove Account
+    loadingAccountData: Loading account data…
+    steps:
+      whatWillBeRemoved: What will be removed
+      verifyIdentity: Verify your identity
+      identityVerified: Identity verified
+      deleteAccount: Delete account
+      accountDeleted: Account deleted
+    step1:
+      description: "Removing your account will permanently delete the following data:"
+      warning: This action is permanent and cannot be undone.
+    step2:
+      otpSentTo: Enter the 6-digit code sent to
+      resendCode: Resend code
+      resendCodeCooldown: "Resend code ({seconds}s)"
+    step3:
+      description: You are about to permanently delete your account and all associated data. This cannot be undone.
+      confirmButton: Delete my account
+    errors:
+      generic: Something went wrong. Please try again.
+      ssoAccount: SSO accounts cannot manage personal account settings.
+      removalInProgress: A removal is already in progress.
+
+  # ========================================
+  # Change Email modal - 4-step email change flow
+  # ========================================
+  changeEmail:
+    title: Change Email # Modal title
+
+    # Step labels (stepper header)
+    steps:
+      verifyCurrentEmail: Verify Current Email # Step 1 title
+      currentEmailVerified: Current email verified # Step 1 completed label
+      enterNewEmail: Enter New Email # Step 2 title
+      verifyNewEmail: Verify New Email # Step 3 title
+      newEmailVerified: New email verified # Step 3 completed label
+      confirmChange: Confirm Change # Step 4 title
+      emailChanged: Email changed # Step 4 completed label
+
+    # Step 1: Verify current email
+    verifyCurrent:
+      description: For security, you need to verify your current email via OTP to change it. # Step 1 description
+      currentEmailLabel: "Current email:" # Label before current email address
+      sendCode: Send Code # Send OTP button
+      otpSentMessage: We sent a 6-digit code to your email. The code expires in 4 minutes. # OTP sent info text
+      verificationCode: Verification Code # OTP input label
+      resendCode: Resend code # Resend button label
+      resendCodeCooldown: "Resend code ({seconds}s)" # Resend button with cooldown timer
+      verify: Verify # Verify OTP button
+
+    # Step 2: Enter new email
+    enterNew:
+      description: "Enter your new email address. We'll send a verification code to confirm it's yours." # Step 2 description
+      newEmailLabel: New Email Address # New email input label
+      placeholder: Enter new email # New email input placeholder
+      sendCode: Send Code # Send OTP button
+
+    # Step 3: Verify new email
+    verifyNew:
+      otpSentTo: We sent a 6-digit code to # Text before new email address
+      codeExpires: The code expires in 4 minutes. # OTP expiry info
+      verificationCode: Verification Code # OTP input label
+      resendCode: Resend code # Resend button label
+      resendCodeCooldown: "Resend code ({seconds}s)" # Resend button with cooldown timer
+      back: Back # Back button to return to step 2
+      verify: Verify # Verify OTP button
+
+    # Step 4: Confirm change
+    confirm:
+      description: "You're about to change your email address:" # Step 4 description
+      from: "From:" # Label for current email in summary
+      to: "To:" # Label for new email in summary
+      pleaseNote: "Please note:" # Notes section title
+      noteNotifications: The new email will receive all account notifications (billing, invitations, etc.) in the future. # Note about notifications
+      noteLogout: "You won't be logged out automatically. Please log out from other devices manually." # Note about logout
+      noteIrreversible: This action cannot be undone. # Note about irreversibility
+      confirmButton: Confirm Change # Confirm change button
+
+    # Polling notifications for email change propagation
+    polling:
+      inProgressTitle: Updating your email across services... # Notification title while syncing
+      inProgressText: This may take a few minutes. You can still continue using the app. # Notification body while syncing
+      completedText: Email updated across all services successfully! # Success notification
+      failedTitle: Some services failed to sync your new email. # Warning notification title
+      failedText: Your email has been changed, but some services may still show the old one. Please contact our support at dbdiagram@holistics.io. # Warning notification body
+
+    # Error messages
+    errors:
+      invalidEmail: Please enter a valid email address # Invalid email format
+      incorrectCode: The code you entered is incorrect # Wrong OTP code
+      codeExpired: The verification code has expired. Please request a new one. # OTP expired
+      codeAlreadyUsed: This code has already been used. Please request a new one. # OTP already used
+      requestExpired: Your verification request has expired. Please request a new code. # OTP request token expired
+      emailInUse: This email is already in use by another account # Duplicate email
+      verificationExpired: Your verification has expired. Please start over. # Verification token expired
+      generic: Something went wrong. Please try again. # Fallback error
