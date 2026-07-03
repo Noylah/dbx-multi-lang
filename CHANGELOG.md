@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## v1.1.17 (Jun 23, 2026)
+### Misc
+* Add copywriting for transfer diagram modal
+
+## 1.1.16 (Jun 12, 2026)
+### Misc
+* Add markdown translations
+
+## 1.1.15 (May 29, 2026)
+### Misc
+* Add copywriting for session expired modal
+
 ## 1.1.14 (May 19, 2026)
 ### Misc
 * Add copywriting for portal's user profile
