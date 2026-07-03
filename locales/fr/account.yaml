@@ -1,0 +1,177 @@
+account:
+  # ========================================
+  # Page du compte
+  # ========================================
+  page:
+    title: Gérez votre compte dbx
+    description: "Toutes les modifications effectuées ici seront répercutées sur les trois services :"
+    authenticating: Authentification en cours...
+
+  # ========================================
+  # Fenêtre Gérer le compte - Aperçu des paramètres du compte
+  # ========================================
+  manage:
+    loadingInfo: Chargement des informations du compte...
+    displayName: Nom d'affichage
+    email: Adresse e-mail
+
+    # Section Comptes connectés
+    connectedAccounts:
+      title: Comptes connectés
+      noAccounts: Aucun compte connecté
+      loggedInWith: Connecté avec {provider}
+
+    # Section Gestion du compte
+    manageTitle: Gérer le compte
+    changeEmail: Modifier l'adresse e-mail
+    changeEmailInProgress: Une modification de votre adresse e-mail est en cours. Veuillez patienter.
+    changeEmailFailed: "La dernière modification de votre adresse e-mail a échoué. Veuillez contacter notre support à l'adresse dbdiagram@holistics.io."
+
+    # Suppression du compte
+    removal:
+      removeAccount: Supprimer le compte
+      cancelRequest: Annuler la demande de suppression
+      removedAfter: "Votre compte sera supprimé dans {time}."
+      aFewHours: quelques heures
+      aDay: un jour
+      days: "{count} jours"
+      cancelSuccess: La demande de suppression a été annulée avec succès !
+      status:
+        inProgressTitle: La suppression de votre compte est en cours.
+        inProgressDescription: Ce processus peut prendre quelques instants. Vous pouvez fermer cette fenêtre en toute sécurité. La suppression se poursuivra en arrière-plan.
+        completedTitle: Votre compte a été supprimé avec succès.
+        completedDescription: "Vous pouvez fermer cette fenêtre en toute sécurité. Remarque : vous ne serez pas déconnecté automatiquement. Veuillez vous déconnecter manuellement sur vos autres appareils."
+        failedTitle: La suppression du compte a échoué.
+        failedContactSupport: Veuillez contacter notre équipe de support à
+
+    notifications:
+      profileUpdated: Le profil utilisateur a été mis à jour avec succès.
+      profileImageUpdated: L'image de profil a été mise à jour avec succès.
+
+    profileImage:
+      title: Image de profil
+      switchToGravatar: Utiliser l'image de profil Gravatar
+      switchToGravatarHint: Pour modifier votre avatar, veuillez utiliser votre image de profil Gravatar.
+      redirectingToGravatar: Redirection vers Gravatar...
+      changeOnGravatar: Modifier l'image de profil sur Gravatar
+      doneUploading: Avez-vous terminé de téléverser votre image sur Gravatar ?
+      gravatarHint: Connectez-vous à Gravatar avec votre adresse e-mail pour modifier votre photo de profil.
+      refresh: Actualiser votre image de profil
+
+    userInfo:
+      title: Informations utilisateur
+
+    dangerZone:
+      title: Zone de danger
+
+    errors:
+      sessionExpired: Votre session a expiré. Veuillez vous reconnecter.
+      updateProfileFailed: Échec de la mise à jour du profil utilisateur. Veuillez réessayer.
+      loadProfileFailed: Impossible de charger le profil utilisateur. Veuillez actualiser la page.
+      updateProfileImageFailed: Échec de la mise à jour de l'image de profil. Veuillez réessayer.
+      cancelRemovalFailed: Impossible d'annuler la demande de suppression du compte. Veuillez réessayer.
+
+  # ========================================
+  # Fenêtre Supprimer le compte - Processus de suppression en 3 étapes
+  # ========================================
+  removeAccountModal:
+    title: Supprimer le compte
+    loadingAccountData: Chargement des données du compte…
+    steps:
+      whatWillBeRemoved: Ce qui sera supprimé
+      verifyIdentity: Vérifiez votre identité
+      identityVerified: Identité vérifiée
+      deleteAccount: Supprimer le compte
+      accountDeleted: Compte supprimé
+
+    step1:
+      description: "La suppression de votre compte entraînera la suppression définitive des données suivantes :"
+      warning: Cette action est définitive et ne peut pas être annulée.
+
+    step2:
+      otpSentTo: Saisissez le code à 6 chiffres envoyé à
+      resendCode: Renvoyer le code
+      resendCodeCooldown: "Renvoyer le code ({seconds}s)"
+
+    step3:
+      description: Vous êtes sur le point de supprimer définitivement votre compte ainsi que toutes les données associées. Cette action est irréversible.
+      confirmButton: Supprimer mon compte
+
+    errors:
+      generic: Une erreur est survenue. Veuillez réessayer.
+      ssoAccount: Les comptes SSO ne peuvent pas gérer les paramètres personnels du compte.
+      removalInProgress: Une suppression est déjà en cours.
+
+  # ========================================
+  # Fenêtre Modifier l'adresse e-mail - Processus en 4 étapes
+  # ========================================
+  changeEmail:
+    title: Modifier l'adresse e-mail
+
+    # Étapes
+    steps:
+      verifyCurrentEmail: Vérifier l'adresse e-mail actuelle
+      currentEmailVerified: Adresse e-mail actuelle vérifiée
+      enterNewEmail: Saisir la nouvelle adresse e-mail
+      verifyNewEmail: Vérifier la nouvelle adresse e-mail
+      newEmailVerified: Nouvelle adresse e-mail vérifiée
+      confirmChange: Confirmer la modification
+      emailChanged: Adresse e-mail modifiée
+
+    # Étape 1
+    verifyCurrent:
+      description: Pour des raisons de sécurité, vous devez vérifier votre adresse e-mail actuelle à l'aide d'un code OTP avant de pouvoir la modifier.
+      currentEmailLabel: "Adresse e-mail actuelle :"
+      sendCode: Envoyer le code
+      otpSentMessage: Nous avons envoyé un code à 6 chiffres à votre adresse e-mail. Ce code expire dans 4 minutes.
+      verificationCode: Code de vérification
+      resendCode: Renvoyer le code
+      resendCodeCooldown: "Renvoyer le code ({seconds}s)"
+      verify: Vérifier
+
+    # Étape 2
+    enterNew:
+      description: "Saisissez votre nouvelle adresse e-mail. Nous vous enverrons un code de vérification afin de confirmer qu'elle vous appartient."
+      newEmailLabel: Nouvelle adresse e-mail
+      placeholder: Saisissez la nouvelle adresse e-mail
+      sendCode: Envoyer le code
+
+    # Étape 3
+    verifyNew:
+      otpSentTo: Nous avons envoyé un code à 6 chiffres à
+      codeExpires: Le code expire dans 4 minutes.
+      verificationCode: Code de vérification
+      resendCode: Renvoyer le code
+      resendCodeCooldown: "Renvoyer le code ({seconds}s)"
+      back: Retour
+      verify: Vérifier
+
+    # Étape 4
+    confirm:
+      description: "Vous êtes sur le point de modifier votre adresse e-mail :"
+      from: "De :"
+      to: "Vers :"
+      pleaseNote: "Veuillez noter :"
+      noteNotifications: La nouvelle adresse e-mail recevra désormais toutes les notifications liées à votre compte (facturation, invitations, etc.).
+      noteLogout: "Vous ne serez pas déconnecté automatiquement. Veuillez vous déconnecter manuellement sur vos autres appareils."
+      noteIrreversible: Cette action est irréversible.
+      confirmButton: Confirmer la modification
+
+    # Notifications de synchronisation
+    polling:
+      inProgressTitle: Mise à jour de votre adresse e-mail sur tous les services...
+      inProgressText: Cette opération peut prendre quelques minutes. Vous pouvez continuer à utiliser l'application pendant ce temps.
+      completedText: L'adresse e-mail a été mise à jour avec succès sur tous les services !
+      failedTitle: La synchronisation a échoué sur certains services.
+      failedText: Votre adresse e-mail a bien été modifiée, mais certains services peuvent encore afficher l'ancienne. Veuillez contacter notre support à l'adresse dbdiagram@holistics.io.
+
+    # Messages d'erreur
+    errors:
+      invalidEmail: Veuillez saisir une adresse e-mail valide.
+      incorrectCode: Le code que vous avez saisi est incorrect.
+      codeExpired: Le code de vérification a expiré. Veuillez en demander un nouveau.
+      codeAlreadyUsed: Ce code a déjà été utilisé. Veuillez en demander un nouveau.
+      requestExpired: Votre demande de vérification a expiré. Veuillez demander un nouveau code.
+      emailInUse: Cette adresse e-mail est déjà utilisée par un autre compte.
+      verificationExpired: Votre vérification a expiré. Veuillez recommencer.
+      generic: Une erreur est survenue. Veuillez réessayer.
