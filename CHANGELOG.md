@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## v1.2.0 (Jul 3, 2026)
 ### Misc
 * Add support for the Spanish (es) locale
 * Add support for the Turkish (tr) locale
