@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+### Misc
+* Add support for the Spanish (es) locale
+* Add support for the Turkish (tr) locale
+* Add support for the Uzbek (uz) locale
+
 ## v1.1.17 (Jun 23, 2026)
 ### Misc
 * Add copywriting for transfer diagram modal

@@ -90,7 +90,7 @@ common:
   # AI Assistant - Chat panel (right sidebar with AI chat)
   # ========================================
   ai:
-    title: IA # Panel title (robot icon in right sidebar)
+    title: AI # Panel title (robot icon in right sidebar)
     scrollToBottom: Ir al final # Floating button when new chat messages arrive
 
   # ========================================
@@ -111,6 +111,12 @@ common:
     loading: Cargando... # Generic loading spinner message
 
   # ========================================
+  # Notes - Warning/note section header
+  # ========================================
+  notes:
+    header: "Ten en cuenta:" # Header label for note/warning sections in modals
+
+  # ========================================
   # Code editor - Right panel DBML code editor
   # ========================================
   editor:
@@ -124,6 +130,10 @@ common:
   # Toast notifications - Popup messages at bottom-right
   # ========================================
   notifications:
+    titles:
+      error: Ocurrió un error # Default title for error toast notifications
+      success: "¡Éxito!" # Default title for success toast notifications
+      warning: Advertencia # Default title for warning toast notifications
     noPermissionRemoveView: ¡No tienes permiso para eliminar la vista del diagrama! # Toast error (shown when user can't remove view)
     noPermissionRenameView: ¡No tienes permiso para renombrar la vista del diagrama! # Toast error (shown when user can't rename view)
     workspaceDisabled: Este espacio de trabajo está actualmente deshabilitado # Warning toast (workspace subscription issue)

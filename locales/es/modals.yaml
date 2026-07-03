@@ -54,6 +54,8 @@ modals:
       removeDesc: Quitar este colaborador. # Remove description
       noAccess: Sin acceso # No access label
       noAccessDesc: Sin acceso a este diagrama # No access description
+      transferOwnership: Transferir propiedad # Transfer ownership permission label
+      transferOwnershipDesc: Transferir la propiedad de este diagrama # Transfer ownership permission description
     invite:
       placeholder: Correo electrónico, separados por coma o espacio # Email input placeholder
       button: Invitar # Invite button
@@ -318,3 +320,19 @@ modals:
   sessionExpired:
     title: Sesión expirada
     description: Tu sesión ha expirado, cerrarás sesión automáticamente en {countdown} segundo(s)…
+
+  # ========================================
+  # Transfer ownership modal
+  # ========================================
+  transferOwnership:
+    title: Transferir propiedad # Modal title
+    subtitle: "Selecciona un miembro al que transferir la propiedad:" # Subtitle below the title
+    searchPlaceholder: Buscar por nombre o correo electrónico... # Search input placeholder
+    noMembersFound: No se encontraron miembros. # Empty state when search has no results
+    transferButton: Transferir # Confirm transfer button
+    notes:
+      irreversible: Esta acción no se puede deshacer. # Warning note
+      scopeRemains: "El historial de versiones, los colaboradores del diagrama y el alcance de acceso del espacio de trabajo permanecerán igual." # Informational note
+    confirmMessage: "¿Deseas transferir la propiedad de este diagrama a <b>{memberLabel}</b>?" # Confirmation dialog message
+    success: Propiedad del diagrama transferida a {memberLabel} # Success toast
+    error: No se pudo transferir la propiedad del diagrama. Por favor, inténtalo de nuevo. # Error toast
