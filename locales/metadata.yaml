@@ -54,3 +54,9 @@ es:
   nativeName: Español
   flag: 🇪🇸
   hello: Hola
+
+ko:
+  name: Korean
+  nativeName: 한국어
+  flag: 🇰🇷
+  hello: 안녕하세요

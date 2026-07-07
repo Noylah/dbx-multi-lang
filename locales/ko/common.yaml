@@ -1,0 +1,216 @@
+# Common UI translations used across the application
+# UI Areas: Header toolbar, Help menu, Export/Import dropdowns, SSO login, Editor panel
+
+common:
+  # ========================================
+  # Buttons - Generic buttons in modals, toolbars, forms throughout the app
+  # ========================================
+  buttons:
+    cancel: 취소     # Gray button in modal dialogs (bottom-right)
+    confirm: 확인    # Green button in confirmation dialogs
+    delete: 삭제     # Red button in item context menus (with trash icon)
+    history: 기록      # Clock icon in header toolbar (opens Version History modal)
+    export: 내보내기   # Export icon in header dropdown (opens export options)
+    ok: 확인 # Simple acknowledgment button in alerts
+    submit: 제출   # Form submission button (submits form data)
+    save: 저장  # Save button in forms
+    next: 다음   # Next button in multi-step flows
+
+  # ========================================
+  # Help menu - Top-right help icon (?) dropdown in header
+  # ========================================
+  help:
+    title: 도움말   # Dropdown label (question mark icon in header toolbar)
+    documentation: 문서      # External link to docs.dbdiagram.io
+    releaseNotes: 릴리스 노트        # Link to changelog page
+    roadmap: 제품 로드맵          # Link to feature roadmap (publicly visible)
+    sendFeedback: 피드백 보내기       # Link to feedback form (opens modal)
+    askCommunity: 커뮤니티에 물어보세요   # Link to Discord/community forum
+    suggestFeature: 기능 제안           # Link to feature request board
+    contactUs: 문의하기       # Link to support email (dbdiagram{'@'}holistics.io)
+    sampleDiagrams: 샘플 다이어그램        # Opens templates gallery modal
+    sampleAirbnb: 샘플 에어비앤비      # Opens Airbnb database schema template
+    sampleEcommerce: 샘플 전자상거래          # Opens e-commerce schema template
+    whatsNew: 새 소식     # Opens what's new modal (highlights recent features)
+    language: 언어       # Submenu for selecting app language
+    contribute: 이 앱 번역을 도와주세요           # Link to Crowdin/translation project
+
+  # ========================================
+  # Export menu - Header export dropdown (blue download icon)
+  # ========================================
+  export:
+    title: 내보내기   # Dropdown header in header toolbar (download icon)
+    publishToDbdocs: DBDocs에 문서 게시               # First option in export dropdown
+    toPdf: PDF로   # Export diagram as PDF format
+    toPng: PNG로   # Export diagram as PNG image
+    toSvg: SVG로   # Export diagram as SVG vector file
+    toPostgreSQL: PostgreSQL로   # Export schema as PostgreSQL DDL
+    toMySQL: MySQL로   # Export schema as MySQL DDL
+    toSQLServer: SQL Server로   # Export schema as SQL Server DDL
+    toOracleSQL: Oracle SQL로   # Export schema as Oracle DDL
+
+  # ========================================
+  # Import menu - Header import dropdown (blue upload icon)
+  # ========================================
+  import:
+    title: 가져오기     # Dropdown header in header toolbar (upload icon)
+    importFrom: 다음에서 가져오기   # Label above import options
+    fromDatabaseConnection: 데이터베이스 연결에서(CLI를 통해)               # CLI import option (opens documentation)
+    fromMySQL: MySQL에서    # MySQL database import (opens connection form)
+    fromPostgreSQL: PostgreSQL에서    # PostgreSQL database import
+    fromSQLServer: SQL 서버에서        # SQL Server database import
+    fromSnowflake: Snowflake에서          # Snowflake database import
+    fromOracleSQL: Oracle SQL에서    # Oracle database import
+    fromRails: Rails에서(schema.rb)        # Rails schema.rb file import
+    fromCSV: CSV에서    # CSV file import (opens file picker)
+
+  # ========================================
+  # Upgrade prompts - Feature upgrade dialogs (shown when free users hit limits)
+  # ========================================
+  upgrade:
+    title: 업그레이드     # Modal title (gold star icon badge)
+
+  # ========================================
+  # Quick actions - Keyboard shortcuts dialog (Ctrl/Cmd+K)
+  # ========================================
+  quickActions:
+    title: 빠른 작업         # Dialog title showing command palette
+
+  # ========================================
+  # SSO authentication - Login page (enterprise SSO login)
+  # ========================================
+  sso:
+    signInWithSSO: SSO로 로그인         # Large SSO button on login page
+    signInWithEmail: 이메일로 로그인           # Email login option button
+    useWorkEmail: 업무 이메일을 사용하여 SSO를 통해 dbdiagram에 접근하세요.         # Helper text below SSO button
+    signInUnsuccessful: 로그인에 실패했습니다. 직장 이메일을 확인하거나 다른 방법을 사용하세요.                            # Error message on SSO failure
+    selectWorkspace: 로그인할 워크스페이스를 선택하세요.           # Dropdown on SSO login (for users with multiple workspaces)
+
+  # ========================================
+  # AI Assistant - Chat panel (right sidebar with AI chat)
+  # ========================================
+  ai:
+    title: AI # Panel title (robot icon in right sidebar)
+    scrollToBottom: 맨 아래로 스크롤        # Floating button when new chat messages arrive
+
+  # ========================================
+  # Common actions - Confirmation dialogs and action confirmations
+  # ========================================
+  actions:
+    confirmUnsaved:
+      title: 확인해주세요         # Modal title for unsaved work dialog
+      content: 변경사항이 저장되지 않을 수 있습니다. 계속하시겠습니까?                             # Warning text in dialog body
+      negativeText: '아니요' # Cancel action button (gray, says "No")
+      positiveText: '예'   # Continue anyway button (blue, says "Yes")
+
+  # ========================================
+  # States - Empty, loading, error state displays
+  # ========================================
+  states:
+    empty: 데이터 없음  # Empty table/list message (centered)
+    loading: 로드 중...    # Generic loading spinner message
+
+  # ========================================
+  # Notes - Warning/note section header
+  # ========================================
+  notes:
+    header: "참고:"          # Header label for note/warning sections in modals
+
+  # ========================================
+  # Code editor - Right panel DBML code editor
+  # ========================================
+  editor:
+    keyboardShortcuts: 키보드 단축키            # Dialog title for keyboard shortcuts reference
+    openInDbdiagram: dbdiagram.io에서 열기    # Link in embedded DBDocs views (top-right)
+    hide: 편집기 숨기기     # Button to hide code editor
+    expand: 편집기 확장        # Button to expand code editor
+    loadingContent: 서버에서 콘텐츠를 로드하는 중입니다. 잠시 기다려 주세요...          # Loading message in editor
+
+  # ========================================
+  # Toast notifications - Popup messages at bottom-right
+  # ========================================
+  notifications:
+    titles:
+      error: 오류가 발생했습니다        # Default title for error toast notifications
+      success: "성공!"      # Default title for success toast notifications
+      warning: 경고      # Default title for warning toast notifications
+    noPermissionRemoveView: 다이어그램 보기를 삭제할 권한이 없습니다!                               # Toast error (shown when user can't remove view)
+    noPermissionRenameView: 다이어그램 보기의 이름을 바꿀 권한이 없습니다.                            # Toast error (shown when user can't rename view)
+    workspaceDisabled: 이 워크스페이스는 현재 비활성화되어 있습니다.              # Warning toast (workspace subscription issue)
+    noEditPermissionAi: dbdiagram AI를 사용하려면 편집 권한이 필요합니다. 다이어그램 소유자에게 편집 권한 부여를 요청하세요.                                                                                                        # Toast (AI feature requires edit rights)
+
+  # ========================================
+  # Login prompts - Gray banner for unauthenticated users
+  # ========================================
+  needLogin:
+    hiThere: 안녕하세요,    # Banner greeting (first line, bold)
+    saveQuery: 다이어그램을 저장하려면 로그인하세요.              # Banner text (when saving requires auth)
+    shareQuery: 다이어그램을 공유하려면 로그인하세요.               # Banner text (share modal when not logged in)
+    newQuery: 새 다이어그램을 만들려면 로그인하세요.              # Banner text (new diagram page)
+    export: 다이어그램을 내보내려면 로그인하세요.                # Banner text (export modal)
+    dbdocsAccess: DBDocs 프로젝트를 편집하려면 로그인하세요.               # Banner text (DBDocs editor)
+    aiAssistant: dbdiagram AI 어시스턴트를 사용하려면 로그인하세요.          # Banner text (AI panel)
+    newDiagram: 새 다이어그램을 만들려면 로그인하세요.              # Banner text (creation page)
+    upgradePersonal: Personal Pro 플랜으로 업그레이드하려면 로그인하세요.           # Banner text (upgrade page)
+    upgradeTeam: Team Plan 체험판을 시작하려면 로그인하세요.               # Banner text (team trial page)
+    joinTeam: 이 팀 워크스페이스에 참여하려면 로그인하세요.                  # Banner text (team invite page)
+    chartUpdateVisibleEntities: 테이블/스티커 메모 공개 상태를 저장하려면 로그인하세요.                   # Banner text (visibility change)
+    diagramViewCreateView: 새 다이어그램 보기를 만들려면 로그인하세요.                # Banner text (view creation)
+    default: 작업을 계속하려면 로그인하세요.                  # Default banner text (fallback)
+
+  # ========================================
+  # DBDocs authentication - Embedded DBDocs login screen
+  # ========================================
+  dbdocsAuth:
+    pleaseLoginWith: 다음으로 로그인하세요.      # Login prompt label (above login buttons)
+    youAreLoggedInAs: 로그인되었습니다          # Logged in status (shows user email)
+    viaSSO: SSO를 통해 # SSO badge (next to email)
+    youNeedToLoginWith: 다음으로 로그인해야 합니다.        # Login required text (precedes login buttons)
+    pleaseLoginToAccess: 이 프로젝트에 접근하려면 로그인하세요.               # Access denied message (DBDocs embed)
+    contactProjectOwner: 접근 권한을 요청하려면 프로젝트 소유자에게 문의하세요.              # Guidance text (who to contact)
+    weWillNeedNonSSO: 인증을 위해서는 SSO가 아닌 계정을 사용해야 합니다.                              # Auth guidance message
+    weWillNeedSameEmail: 인증을 위해서는 DBDocs와 동일한 이메일 계정을 사용해야 합니다.                                       # Email match guidance
+    noEditPermission: 이 프로젝트에 대한 편집 권한이 없습니다.                           # Error message (DBDocs edit permission denied)
+
+  # ========================================
+  # Real-time collaboration - Connection and sync messages
+  # ========================================
+  additional:
+    collab:
+      noLongerViewPermission: 더 이상 보기 권한이 없습니다!                   # Toast when view access revoked
+      doNotHaveViewPermission: 보기 권한이 없습니다!                     # Toast when no access at all
+      fullSession: 전체 세션으로 인해 연결할 수 없습니다!              # Toast when collaboration session full
+      diagramDeleted: 이 다이어그램은 삭제되었습니다!         # Toast when diagram deleted by owner
+      overwrittenDiagram: 누군가 다이어그램 콘텐츠를 덮어썼습니다. 최신 변경 사항을 보려면 다시 로드하세요!                                     # Toast when remote changes
+      diagramMigratedDiagramViewAsCode: 다이어그램 보기가 새 "코드로 다이어그램 보기" 형식으로 
+        마이그레이션되었습니다. 계속하려면 새로고침하세요. 문제가 발생하면 dbdiagram{'@'}holistics.io에 문의하세요.                                                                                                                                    # Toast when DiagramView-as-code migration completes
+      permissionsChanged: 권한이 변경되었습니다. 변경 사항을 적용하려면 새로고침하세요!                                  # Toast when permissions updated
+      cannotReconnect: 서버에 다시 연결할 수 없습니다               # Toast when reconnection fails
+
+    # ========================================
+    # Save, share, publish - Diagram operation messages
+    # ========================================
+    query:
+      noPermissionShare: 이 다이어그램을 공유할 권한이 없습니다.                          # Error toast (share action)
+      cantCreateDiagram: 새 다이어그램을 만들 수 없습니다. 파일을 백업한 후 로그아웃하고 다시 로그인해 보세요.                                     # Error toast (create failed)
+      cantSaveDiagram: 다이어그램을 저장할 수 없습니다. 파일을 백업한 후 로그아웃하고 다시 로그인해 보세요.                                 # Error toast (save failed)
+      noPermissionSave: 이 다이어그램을 저장할 권한이 없습니다.                         # Error toast (save permission)
+      diagramDeleted: 다이어그램이 삭제되었습니다.          # Toast (diagram deleted notification)
+      cantDeleteDiagram: 다이어그램을 삭제할 수 없습니다. 파일을 백업한 후 로그아웃하고 다시 로그인해 보세요.                                       # Error toast (delete failed)
+      noPermissionGetInfo: 다이어그램 정보를 가져올 권한이 없습니다!                               # Error toast (info load permission)
+      cantGetDiagramInfo: 다이어그램 정보를 가져올 수 없습니다. 다시 시도해 주세요!                  # Error toast (info load failed)
+      noPermissionAccessProject: 이 프로젝트에 접근할 수 있는 권한이 없습니다.                       # Error toast (project access)
+      failedLoadProjectDbdocs: DBDocs에서 프로젝트를 로드하지 못했습니다.         # Error toast (DBDocs load)
+      failedPublishDbdocs: DBDocs에 프로젝트를 게시하지 못했습니다.           # Error toast (DBDocs publish)
+      pleaseSignInSaveDraft: 초안 버전을 저장하려면 로그인하세요.                  # Login prompt toast (save draft)
+      noPermissionSaveDraft: 초안 버전을 저장할 권한이 없습니다.                              # Error toast (draft permission)
+      autoSaveDraftFailed: 초안 자동 저장에 실패했습니다.       # Error toast (auto-save draft)
+      failedSaveDraft: 초안 버전을 저장하지 못했습니다.           # Error toast (draft save failed)
+      pleaseSignInDeleteDraft: 초안 버전을 삭제하려면 로그인하세요.                    # Login prompt toast (delete draft)
+      noPermissionDeleteDraft: 초안 버전을 삭제할 권한이 없습니다.                                # Error toast (delete draft permission)
+      failedDeleteDrafts: 초안 버전을 삭제하지 못했습니다.              # Error toast (delete draft failed)
+      pleaseSignInCheckVersion: 버전 상태를 확인하려면 로그인하세요.                   # Login prompt toast (version check)
+      noPermissionCheckVersion: 버전 상태를 확인할 권한이 없습니다.                               # Error toast (version check permission)
+      failedCheckVersion: 버전 상태를 확인하지 못했습니다.             # Error toast (version check failed)
+      pleaseSignInLoadLatest: 최신 버전을 로드하려면 로그인하세요.                  # Login prompt toast (load version)
+      failedLoadLatest: 최신 버전을 로드하지 못했습니다.            # Error toast (load version failed)

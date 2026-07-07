@@ -18,7 +18,8 @@
     "./dist/uz.json": "./dist/uz.json",
     "./dist/es.json": "./dist/es.json",
     "./dist/tr.json": "./dist/tr.json",
-    "./dist/fr.json": "./dist/fr.json"
+    "./dist/fr.json": "./dist/fr.json",
+    "./dist/ko.json": "./dist/ko.json"
   },
   "files": [
     "dist",

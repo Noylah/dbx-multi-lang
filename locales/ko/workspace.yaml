@@ -1,0 +1,183 @@
+# 워크스페이스 translations - Sidebar, dropdown, and settings
+# UI Areas: Left sidebar, 워크스페이스 dropdown, Settings page
+
+workspace:
+  # ========================================
+  # General workspace labels - Sidebar and dropdown
+  # ========================================
+  personalWorkspace: 개인 워크스페이스           # Label for personal workspace (when no team workspace selected in dropdown)
+  personal: 개인      # Short label for personal workspace type
+  createWorkspace: 새 워크스페이스 만들기           # Button/link to create new team workspace (sidebar)
+  dashboard: 대시보드       # Sidebar link to workspace dashboard (left sidebar)
+  newDiagram: 새 다이어그램     # Button to create new diagram (sidebar)
+  newSampleDiagram: 새 샘플 다이어그램       # Dropdown with sample diagram templates (sidebar)
+  basic: 기본  # Label for basic tier/sample (templates dropdown)
+  advanced: 고급      # Label for advanced tier/sample (templates dropdown)
+  myDiagrams: 내 다이어그램     # Sidebar section for personal diagrams
+  sharedWithMe: 나와 공유됨         # Sidebar section for shared diagrams
+  workspace: 워크스페이스      # Label for team workspace type
+  private: 비공개     # Privacy label for private items
+  readOnlyMode: 구독 취소로 인해 워크스페이스가 읽기 전용 모드입니다. 워크스페이스 기능을 활성화하려면 갱신하세요.
+
+  # ========================================
+  # Settings - 워크스페이스 settings page
+  # ========================================
+  settings:
+    title: 설정       # Settings page title
+    workspaceName: 워크스페이스 이름        # Label for workspace name field
+    update: 업데이트   # Save button for settings
+    loadingInfo: 워크스페이스 정보 로드 중...                  # Loading message when fetching settings
+    singleSignOn: 싱글 사인온(SSO)    # SSO settings section title
+    authenticateWithSSO: SSO(SAML)로 인증                # SSO toggle label
+    enabled: 활성화됨    # Status label for enabled
+    samlConfiguration: SAML 구성            # SAML config section title
+    enforceSSO: SSO 강제 적용      # Enforce SSO toggle
+    enforceSSODescription: 강제 적용하면 워크스페이스 멤버는 SSO를 통해서만 이 워크스페이스에 접근할 수 있습니다.                     # Help text for enforce SSO
+    identityProviderUrl: ID 공급자 Single Sign-On URL            # IdP URL field label
+    identityProviderUrlPlaceholder: "https://login.microsoftonline.com/{tenant}/saml2"                                        # Placeholder for IdP URL
+    identityProviderUrlHelp: ID 공급자 엔드포인트의 URL입니다.                       # Help text for IdP URL
+    certificate: 인증서         # Certificate field label
+    certificatePlaceholder: "-----BEGIN CERTIFICATE-----\n<X.509 certificate>\n-----END CERTIFICATE-----"                               # Placeholder for certificate
+    samlConfigurationForProvider: ID 공급자에 대한 SAML 구성                            # Provider config section
+    assertionConsumerServiceUrl: Assertion Consumer Service URL                # ACS URL field label
+    assertionConsumerServiceUrlHelp: '"응답자 서비스 URL" 또는 "응답 URL"이라고도 합니다.'                    # Help text for ACS URL
+    identifier: 식별자        # Identifier field label
+    identifierHelp: '"발행자" 또는 "신뢰 당사자 신뢰 식별자"라고도 합니다.'                       # Help text for identifier
+    saveSSOSettings: Single Sign-On 설정 저장         # Save SSO settings button
+    manageWorkspace: 워크스페이스 관리          # Link to workspace management
+    removeWorkspace: 워크스페이스 삭제...          # Danger button to remove workspace
+    cancelRemovalRequest: 삭제 요청 취소               # Cancel workspace removal button
+    removalWarning: 이 작업은 취소할 수 없습니다!             # Warning about removal
+    removalScheduledHours: 몇 시간 후에 워크스페이스가 삭제됩니다.                              # Removal scheduled message
+    removalScheduledDay: 워크스페이스는 하루 후에 삭제됩니다.                          # Removal scheduled message
+    removalScheduledDays: "워크스페이스는 {count}일 후에 삭제됩니다."                           # Removal scheduled message
+    removeWorkspaceTitle: 이 워크스페이스를 삭제하시겠습니까?      # Remove workspace modal title
+    removeWorkspaceContent: 7일 후에 워크스페이스를 삭제하도록 일정을 설정해 드리겠습니다. 마음이 바뀌면 이 "설정" 
+      메뉴에서 워크스페이스 삭제 일정을 취소할 수 있습니다.                                                                                                                                                   # Remove workspace modal content
+    removeWorkspaceButton: 이 워크스페이스 삭제             # Confirm remove button
+    removeWorkspaceSuggestion: '확인하려면 텍스트 입력 필드에 <i> 영구 삭제 </i>을 입력하세요.'                                   # Confirmation input prompt
+    removalRequestCanceled: 삭제 요청이 취소되었습니다!                            # Success toast
+    removalRequestCreated: 삭제 요청이 접수되었습니다!                     # Success toast
+    contactSupportError: 오류가 발생했습니다. dbdiagram{'@'}holistics.io(으)로 지원팀에 문의하세요.                          # Support contact message
+    workspaceNameUpdated: 워크스페이스 이름이 업데이트되었습니다.                 # Success toast
+    workspaceNameUpdateFailed: 워크스페이스 이름을 업데이트하지 못했습니다. 다시 시도해 주세요.              # Error toast
+    ssoConfigFetchFailed: SSO 구성을 가져오지 못했습니다. 페이지를 새로고침해 보세요.                                # Error toast
+    ssoConfigUpdated: SSO 구성이 업데이트되었습니다.                     # Success toast
+    ssoConfigSaveFailed: SSO 구성을 저장하지 못했습니다. 다시 시도해 주세요.                     # Error toast
+
+  # ========================================
+  # Members - Member management
+  # ========================================
+  members:
+    invite: 초대   # Invite button
+    invitePlaceholder: 이메일 주소를 입력하세요       # Email input placeholder
+    inviteButton: 초대   # Send invite button
+    members: 멤버      # Members section title
+    role:
+      member: 멤버     # Member role label
+      owner: 소유자   # Owner role label
+    actions:
+      remove: 제거   # Remove action
+      removeInvitation: 이 초대 제거                # Remove invitation action
+      removeMember: 이 멤버 제거            # Remove member confirmation
+    dialog:
+      removeMessage: 워크스페이스에서 <b> {email} </b>을(를) 제거하려고 합니다. 작업을 확인해 주세요!                                     # Remove dialog message
+    notifications:
+      removeSuccess: 워크스페이스에서 {email}을(를) 제거했습니다!             # Success toast
+      removeError: 워크스페이스에서 {email}을(를) 제거할 수 없습니다!        # Error toast
+
+  # ========================================
+  # Diagram List - Diagram list view
+  # ========================================
+  diagramList:
+    searchPlaceholder: 다이어그램 검색        # Search input placeholder
+    freePlan: 무료   # Label for free plan
+    plan: 플랜   # Plan suffix label
+    diagramCount: "다이어그램: {count} / {limit}"  # Diagram count indicator
+    duplicate: 복제      # Duplicate button
+    transferOwnership: 소유권 이전             # Transfer ownership button
+    delete: 삭제     # Delete button
+    untitledDiagram: 제목 없는 다이어그램      # Default name for unnamed diagrams
+    columns:
+      name: 이름   # Table column header (diagram name)
+      dateCreated: 생성된 날짜       # Table column header
+      dateModified: 수정된 날짜        # Table column header
+      owner: 소유자   # Table column header
+
+  # ========================================
+  # Sidebar - Sidebar sections
+  # ========================================
+  sidebar:
+    apiTokens: API 토큰     # API Tokens link (left sidebar)
+    billing: 결제      # Billing link (left sidebar)
+
+  # ========================================
+  # Empty States - Empty diagrams views
+  # ========================================
+  emptyDiagrams:
+    title: 아직 다이어그램이 없습니다. # Empty diagrams title
+    created:
+      description: 워크스페이스에 다이어그램이 없습니다. 새 다이어그램 버튼으로 시작하세요.                              # Empty state description (part 1)
+      button: + 새 다이어그램     # Button to create first diagram
+      buttonSuffix: 버튼.     # Empty state description (part 2)
+    shared:
+      description: 아직 다이어그램에 초대되지 않았습니다.                          # Empty state for shared diagrams
+    workspacePublic:
+      description: 팀에 표시되는 다이어그램이 없습니다. 새 다이어그램 버튼으로 시작하세요.                                 # Empty state for public workspace
+    workspacePrivate:
+      description: 비공개 다이어그램이 없습니다. 새 다이어그램을 만들고 비공개로 유지할 수 있습니다.                                   # Empty state for private workspace
+
+  # ========================================
+  # Plan - Plan labels
+  # ========================================
+  plan:
+    pro: 프로 플랜    # Pro plan label
+    free: 무료 플랜     # Free plan label
+    team: 팀 플랜      # Team plan label
+    disabled: "(비활성화됨)"   # Disabled plan label
+
+  # ========================================
+  # Welcome - Welcome modal
+  # ========================================
+  welcome:
+    title: 팀 워크스페이스에 오신 것을 환영합니다!      # Welcome modal title
+    description: 새 다이어그램을 만들고 팀원과 협업하며 시작해 보세요.                                            # Welcome modal description
+    learnMore: 자세히 알아보기 →   # Learn more link
+
+  # ========================================
+  # API Tokens - API tokens management
+  # ========================================
+  apiTokens:
+    title: API 토큰     # API Tokens page title
+    description: API 토큰은 API 요청이 있을 때마다 dbdiagram API에 대한 인증에 사용됩니다. 비밀번호와 마찬가지로
+      API 토큰도 비밀로 유지되어야 합니다.                                                                                                                                  # Description text
+    seeDocumentation: 문서를 확인하세요.        # Link to API docs
+    generateNew: 새 토큰 생성            # Button to generate token
+    columns:
+      name: 이름   # Token name column header
+      dateCreated: 생성된 날짜       # Created date column header
+      lastUsed: 마지막으로 사용됨 # Last used column header
+      owner: 소유자   # Owner column header
+    empty: 아직 생성된 토큰이 없습니다.     # Empty state message
+    actions:
+      revoke: 폐기     # Revoke token action
+    modal:
+      newToken: 새 API 토큰    # New token modal title
+      tokenName: 토큰 이름      # Token name input label
+      tokenNamePlaceholder: 토큰 이름을 입력하세요     # Token name placeholder
+      generate: 토큰 생성          # Generate button
+      copyWarning: API 토큰은 다시 볼 수 없으므로 지금 복사하시기 바랍니다.                                           # Warning about copying token
+      copied: 복사됨    # Success message after copying
+      copy: 복사   # Copy button
+      done: 완료   # Done button
+      revokeTitle: API 토큰을 취소하시겠습니까? # Revoke confirmation title
+      revokeContent: '" {name} " API 토큰을 취소하시겠습니까? 이 작업은 취소할 수 없습니다.'                            # Revoke confirmation content
+      revokePositive: 토큰 취소        # Confirm revoke button
+      revokeSuggestion: '확인하려면 텍스트 입력 필드에 <i> 영구 삭제 </i>을 입력하세요.'                                   # Revoke input prompt
+      generateSuccess: 토큰이 성공적으로 생성되었습니다.           # Success toast
+    errors:
+      nameEmpty: 토큰 이름은 비워둘 수 없습니다.         # Validation error
+      nameInvalid: 토큰 이름에는 알파벳, 숫자, 공백, "-" 또는 "_"만 포함할 수 있습니다.                           # Validation error
+      nameWhitespace: 토큰 이름은 비어 있거나 공백만 포함할 수 없습니다.                          # Validation error
+      upgradeRequired: 토큰을 생성하고 API에 접근하려면 플랜을 업그레이드하세요.                           # Upgrade required error
+      ownerOnly: 워크스페이스 소유자만 새 토큰을 생성할 수 있습니다.                # Permission error

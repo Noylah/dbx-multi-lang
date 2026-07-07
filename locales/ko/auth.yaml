@@ -1,0 +1,87 @@
+# Authentication translations - Login, Signup, Password pages
+# UI Areas: Auth pages (/login, /signup, /forgot-password)
+
+auth:
+  # ========================================
+  # Login Page - Email/password login
+  # ========================================
+  login:
+    email: 이메일   # Email input label
+    loginWithGithub: GitHub로 로그인        # Social login button (GitHub)
+    loginWithMicrosoft: 마이크로소프트로 로그인          # Social login button (Microsoft)
+
+  # ========================================
+  # OAuth Errors - OAuth flow errors
+  # ========================================
+  oauth:
+    authorizationError: 승인 실패                # OAuth error title
+    processing: 처리 중...       # Loading state (OAuth redirect)
+    justAMomentPleaseWait: 잠시만 기다려 주세요...                # Loading message (OAuth redirect)
+    signedInAs: 다음 계정으로 로그인되어 있습니다.  # Session label (SSO indicator)
+    failedSignInGitHub: GitHub에 로그인하지 못했습니다.          # Error toast (GitHub OAuth)
+    failedSignInMicrosoft: Microsoft에 로그인하지 못했습니다. 다시 시도해 주세요!                 # Error toast (Microsoft OAuth)
+
+  # ========================================
+  # Form Errors - Validation error messages
+  # ========================================
+  errors:
+    invalidEmail: 잘못된 이메일 주소입니다. 다시 시도해 주세요!               # Email validation
+    githubPopupBlocked: GitHub에 로그인하려면 팝업을 허용하세요.                  # Browser setting error
+
+  # ========================================
+  # OTP Authentication - One-time password
+  # ========================================
+  otp:
+    signInWithEmail: 이메일로 로그인           # OTP tab label
+    otpSentTo: OTP가 다음으로 전송되었습니다. # Label (shows masked email)
+    wrongEmail: 이메일 주소가 잘못되었나요?      # Change email link
+    changeEmail: 이메일 변경       # Change email button
+    inputEmail: 이메일 주소를 입력해주세요                  # Email input placeholder
+    inputYourOtp: OTP를 입력하세요     # OTP input placeholder
+    inputOtpCode: 이메일로 전송된 OTP 코드를 입력해주세요                     # OTP help text
+    signInSuccess: 성공적으로 로그인되었습니다         # Success message
+    didntReceiveOtp: OTP를 받지 못하셨나요?          # Help text (resend section)
+    resendOtp: OTP 재전송    # Resend button
+    resendAfter: '{counter}초 후에 OTP를 다시 보낼 수 있습니다.'  # Timer label (disabled state)
+    submit: 제출   # OTP submit button
+    sendOtpFailed: OTP 전송에 실패했습니다. 다시 시도해 주세요!        # Error toast
+
+  # ========================================
+  # SSO Login - Single Sign-On
+  # ========================================
+  sso:
+    orContinueWith: 또는 다음으로 계속           # SSO divider text
+
+  # ========================================
+  # Embedded Portal - OAuth portal pages
+  # ========================================
+  portal:
+    signIn: 로그인     # Button (portal embedded login)
+    signInWith: 다음으로 로그인
+
+  # ========================================
+  # Additional Errors - Extra error messages
+  # ========================================
+  additional:
+    unknownError: 알 수 없는 오류     # Fallback error
+    invalidOtp: OTP가 잘못되었습니다. 다시 시도해 주세요.      # OTP validation error
+    cannotValidateOtp: OTP를 확인할 수 없습니다. 다시 시도해 주세요!            # OTP validation failure
+    emailNotVerified: 이메일이 확인되지 않았습니다. Microsoft 계정에서 확인해 주세요.                         # MS email verification
+    cannotSignInMicrosoftSSO: Microsoft SSO로 로그인할 수 없습니다. 다시 시도해 주세요!              # MS SSO error
+    cannotSignIn: 로그인할 수 없습니다. 다시 시도해 주세요!          # Generic sign-in error
+    failedReloadProject: 로그인 후 프로젝트를 다시 로드하지 못했습니다. 페이지를 새로고침하세요.                       # Reload error
+    loginError: 로그인 오류      # Generic login error
+    signInCancelled: 로그인이 취소되었습니다. 다시 시도해 주세요.            # Cancelled flow
+
+  # ========================================
+  # Logout Callback - Post-logout redirect
+  # ========================================
+  logoutCallback:
+    redirecting: 리디렉션 중...      # Loading message (logout redirect)
+    redirectDescription: 몇 초 안에 해당 애플리케이션으로 리디렉션됩니다.                                 # Help text
+
+  popupsWarning:
+    title: 로그인 창을 열 수 없습니다
+    description: 브라우저나 확장 프로그램에 의해 로그인 창이 차단되었을 수 있습니다. 설정을 확인하고 다시 시도해 주세요.
+    needHelp: 도움이 필요하신가요?
+    contactSupport: 지원팀에 문의
