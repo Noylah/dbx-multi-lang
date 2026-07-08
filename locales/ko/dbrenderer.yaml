@@ -1,0 +1,179 @@
+# DBRenderer translations - Diagram canvas and panels
+# UI Areas: Left sidebar, Canvas toolbar, Bottom-right zoom, Context menus
+
+dbrenderer:
+  # ========================================
+  # Table Search Panel - Left sidebar (toggle with Ctrl/Cmd+K)
+  # ========================================
+  tableSearchPanel:
+    title: 테이블    # Panel title (left sidebar header)
+    diagramViews: 다이어그램 보기      # Dropdown header for views (table search panel)
+    diagramViewsTooltip: 다이어그램 보기는 데이터베이스의 특정 도메인이나 워크플로를 나타내는 테이블 모음입니다.                                                       # Tooltip for views dropdown
+    viewActions: 보기 작업        # Dropdown header for view actions
+    cannotRenameOrDelete: '{name}의 이름을 바꾸거나 삭제할 수 없습니다.'     # Error toast (default view protection)
+    rename: 이름 바꾸기 # Menu option (view context menu)
+    delete: 삭제     # Menu option (view context menu)
+    reset: 초기화 # Button (resets view to default)
+    save: 저장  # Button (saves current view)
+    saveAsNew: 새로 저장       # Button (creates new view)
+    searchPlaceholder: 테이블 또는 스키마 검색          # Search input placeholder (no groups)
+    searchPlaceholderWithGroup: 테이블, 스키마 또는 그룹 검색             # Search input placeholder (with groups)
+    groupBy: 그룹화 기준   # Dropdown to group tables
+    showAll: 모두 표시    # Button (shows all tables)
+    hideAll: 모두 숨기기   # Button (hides all tables)
+    schema: 스키마     # Group by option (group by schema)
+    tableGroup: 테이블 그룹      # Group by option (group by custom table group)
+    noGroup: (그룹 없음)    # Group label (tables without group)
+    defaultView: 기본 보기        # Label (default view indicator)
+    unknownView: 알 수 없는 보기    # Label (unknown view name)
+    newView: 새 다이어그램 보기   # Button (creates new diagram view)
+    copyOfName: '{name} 사본'    # Default name for copied view
+
+  # ========================================
+  # Controller Bar - Top canvas toolbar
+  # ========================================
+  controllerBar:
+    highlightRelationships: 관계 강조                   # Toggle button (highlights related tables)
+    unhighlightRelationships: 관계 강조 해제                  # Toggle button (removes highlight)
+    enableGrid: 그리드 활성화     # Toggle button (shows grid)
+    disableGrid: 그리드 비활성화     # Toggle button (hides grid)
+    addStickyNote: 스티커 메모 추가       # Button (creates new sticky note on canvas)
+    searchTables: 테이블 검색        # Button (opens table search panel)
+    hideTableSearch: 테이블 검색 숨기기        # Button (closes table search panel)
+    enterFullscreen: 전체 화면으로 전환        # Button (goes fullscreen)
+    exitFullscreen: 전체 화면 종료         # Button (exits fullscreen)
+
+  # ========================================
+  # Auto Arrange - Modal dialog (Ctrl/Cmd+Shift+A)
+  # ========================================
+  autoArrange:
+    title: 자동 정렬 알고리즘 선택                 # Modal title
+    leftRight: 왼쪽-오른쪽     # Algorithm option (horizontal layout L→R)
+    snowflake: Snowflake # Algorithm option (snowflake schema layout)
+    compact: 콤팩트     # Algorithm option (compact layout)
+    confirmMessage: 다이어그램은 자동으로 다시 정렬되며 실행 취소할 수 없습니다. 확실합니까?                                                     # Warning in modal body
+    confirm: 확인(↵)       # Confirm button (with Enter shortcut)
+    cancel: 취소(Esc)      # Cancel button (with Escape shortcut)
+
+  # ========================================
+  # Detail Level - Dropdown (eye icon)
+  # ========================================
+  detailLevel:
+    title: 세부 수준        # Dropdown title
+    all: 모든 필드      # Option (shows all fields)
+    tables: 테이블 이름      # Option (only shows table names, hides all fields)
+    keys: 키만       # Option (only shows primary and foreign keys, hides other fields)
+  relationshipMode:
+    title: 링크 유형     # Dropup prefix + dropup header
+    relationships: 엔터티 관계               # Option (FK relationship lines)
+    dependencies: 데이터 종속성           # Option (data-lineage dependency lines)
+    all: 모든 유형     # Option (shows both relationships and dependencies)
+
+  # ========================================
+  # View Dropdown - View selector menu
+  # ========================================
+  viewDropdown:
+    renameView: 보기 이름 바꾸기   # Menu option (renames current view)
+    removeView: 보기 삭제       # Menu option (deletes current view)
+    newView: 새 다이어그램 보기   # Menu option (creates new view)
+    disabled: (비활성화됨)   # Label for restricted views (free users)
+
+  # ========================================
+  # Diff Legend - Shown in compare mode
+  # ========================================
+  diffLegend:
+    added: 추가됨   # Green legend item (new tables)
+    modified: 수정됨      # Yellow legend item (changed tables)
+    deleted: 삭제됨     # Red legend item (removed tables)
+
+  # ========================================
+  # Viewport Controller - Bottom-right corner
+  # ========================================
+  viewportController:
+    zoomOut: 축소(가속하려면 누르고 있음)              # Zoom out button tooltip
+    zoomIn: 확대(가속하려면 누르고 있음)             # Zoom in button tooltip
+    editZoomLevel: 확대/축소 수준을 수정하려면 클릭하세요.   # Zoom input tooltip
+    zoomToFit: 보기의 모든 요소에 맞게 확대/축소              # Fit to screen button tooltip
+    enablePanMode: 팬 모드를 활성화하려면 클릭하세요.      # Pan mode toggle tooltip
+    disablePanMode: 팬 모드를 비활성화하려면 클릭하세요.      # Pan mode toggle tooltip
+    panModeHint: 또는 스페이스/가운데 마우스를 누른 채 드래그하여 이동하세요.       # Hint text for pan mode
+
+  # ========================================
+  # Common - Shared buttons in renderer
+  # ========================================
+  common:
+
+  # ========================================
+  # Empty State Hint - Canvas empty states
+  # ========================================
+  emptyStateHint:
+    filtered:
+      title: 다이어그램 보기가 비어 있습니다.         # Empty state title (all tables hidden)
+      description: 이 보기의 모든 테이블은 현재 숨겨져 있습니다. 테이블 검색 패널을 사용하여 다이어그램 보기에 테이블을 
+        표시합니다.                                                                                                                  # Empty state description
+      openTableSearchPanel: 테이블 검색 패널 열기            # Button (opens sidebar)
+    noDbml:
+      title: 데이터베이스 스키마를 찾을 수 없습니다.   # Empty state title (no tables in DBML)
+      description: DBML 코드에 아직 테이블이 포함되어 있지 않습니다. 다이어그램을 보려면 테이블과 관계를 추가하세요.                                        # Empty state description
+      startAddingTables: 테이블 추가 시작           # Button (opens add table modal)
+
+  # ========================================
+  # Loading States - Loading indicator messages
+  # ========================================
+  loading:
+    initializingTables: 테이블 초기화 중...           # Loading message (table loading)
+    initializingTablesProgress: 테이블 초기화 중... ( {current} / {total} )       # Loading with progress
+    initializingTableGroups: 테이블 그룹 초기화 중...              # Loading message (group loading)
+    initializingTableGroupsProgress: 테이블 그룹 초기화 중... ( {current} / {total} )          # Loading with progress
+    initializingReferences: 참조 초기화 중...                # Loading message (relationship loading)
+    initializingReferencesProgress: 참조 초기화 중... ( {current} / {total} )            # Loading with progress
+    arrangingDiagram: 다이어그램을 정리하는 중...          # Loading message (layout calculation)
+    finalizingDiagram: 다이어그램 마무리 중...        # Loading message (render completion)
+
+  # ========================================
+  # Filter Config Tags - Filter chips in canvas
+  # ========================================
+  filterConfigTags:
+    all: 모두  # Filter chip (shows all items)
+    allTables: 모든 테이블     # Filter chip (all tables)
+    allNotes: 모든 노트     # Filter chip (all notes)
+    nothing: 아무것도 아님 # Filter chip (nothing shown)
+    moreItems: '{count} 추가 항목:'      # Overflow indicator (more filters)
+
+  # ========================================
+  # Sticky Notes - Sticky note section
+  # ========================================
+  stickyNotesSection:
+    title: 스티커 메모       # Section title (left sidebar)
+  stickyNotes:
+    untitledNote: 제목 없는 메모      # Default name for new notes
+    removeNoteConfirmation: 메모를 삭제하시겠습니까?     # Delete confirmation dialog title
+    'yes': '예'   # Confirm button (delete note)
+    'no': '아니요' # Cancel button
+
+  # ========================================
+  # Table List - Table list in sidebar
+  # ========================================
+  tableList:
+    noTablesFound: 테이블을 찾을 수 없습니다. # Empty state (search results)
+
+  # ========================================
+  # Record Preview - Preview data sample modal
+  # ========================================
+  recordPreviewModal:
+    infoTooltip: 예제 행을 보고 테이블의 데이터를 빠르게 이해하세요.
+    editBtn:
+      title: 편집
+      tooltip: 데이터 샘플 편집
+    downloadBtn:
+      title: 다운로드
+      tooltip: CSV 다운로드
+  # ========================================
+  # View Note Modal - Preview/edit markdown note
+  # ========================================
+  viewNoteModal:
+    infoTooltip: Markdown을 사용한 스타일링이 지원됩니다.
+    editBtn:
+      title: 편집
+    cancelBtn: 취소
+    saveBtn: 저장

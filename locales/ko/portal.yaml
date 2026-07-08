@@ -1,0 +1,107 @@
+# Portal translations - Embedded documentation portal
+# UI Areas: OAuth callback pages, SSO portal, Error pages
+
+portal:
+  # ========================================
+  # OAuth Welcome - OAuth success messages
+  # ========================================
+  oauth:
+    welcomeTo: '{clientName}에 오신 것을 환영합니다.' # Welcome message (OAuth success)
+    signingInTo: '{clientName}에 로그인 중'      # Loading message (OAuth)
+    successfullySignedInTo: '{clientName}에 로그인되었습니다.'              # Success message (OAuth)
+    welcome: 환영      # Simple welcome label
+    signingIn: 로그인        # Loading label
+    successfullySignedIn: 성공적으로 로그인되었습니다         # Success label
+    powering: 제공    # Portal attribution prefix
+    signOutFrom: '{clientName}에서 로그아웃'      # Sign out link
+    signOutFromAccount: 계정에서 로그아웃                  # Sign out button
+
+  # ========================================
+  # GitHub Callback - OAuth callback messages
+  # ========================================
+  githubCallback:
+    authenticating: 인증 진행중입니다. 잠시만 기다려주세요...                                # Loading message (GitHub OAuth)
+    authSuccess: 인증에 성공했습니다! 이 창을 안전하게 닫아도 됩니다.                              # Success message (GitHub OAuth)
+    title: GitHub 인증             # Page title (browser tab)
+    errors:
+      noOpener:
+        title: 잘못된 접근        # Error title (no opener)
+        description: 이 페이지를 직접 열 수 없습니다. 애플리케이션으로 돌아가서 로그인 절차를 시작하세요.                                               # Error description (no opener)
+      openerClosed:
+        title: 상위 창 닫힘              # Error title (window closed)
+        description: 인증하는 동안 원래 애플리케이션 창이 닫혔습니다. 애플리케이션으로 돌아가서 로그인 절차를 다시 시작하세요.                                                                                                                                          # Error description (window closed)
+      accessDenied:
+        title: 접근 불가         # Error title (user denied)
+        description: GitHub 인증을 취소했습니다.                       # Error description (access denied)
+      appSuspended:
+        title: 애플리케이션이 일시 중지되었습니다           # Error title (app suspended)
+        description: GitHub 애플리케이션이 일시 중지되었습니다.                 # Error description (app suspended)
+      redirectUriMismatch:
+        title: 리디렉션 URI 불일치          # Error title (redirect URI)
+        description: 리디렉션 URI가 구성과 일치하지 않습니다.                           # Error description (redirect URI)
+      unknown:
+        title: 예상치 못한 오류        # Error title (generic)
+        description: 문제가 발생했습니다. dbdiagram{'@'}holistics.io로 지원팀에 문의하세요.                            # Error description (generic)
+
+  # ========================================
+  # Logout - Logout messages
+  # ========================================
+  logout:
+    validating: 로그아웃 요청을 확인하는 중...           # Loading message (logout)
+    loggingOut: 로그아웃 중...          # Loading message (logging out)
+    authorizationError: 인증 오류               # Error title
+    logoutFailed: 로그아웃 실패       # Error title
+
+  # ========================================
+  # SSO - Single Sign-On messages
+  # ========================================
+  sso:
+    continue: 계속     # Button (SSO continue)
+    multipleWorkspaces: '{email}에 대해 여러 SSO 워크스페이스가 발견되었습니다.'      # Multiple workspaces warning
+    failedInitiate: SSO 로그인을 시작하지 못했습니다. 다시 시도해 주세요.                # Error message (SSO)
+    somethingWrong: 문제가 발생했습니다. 다시 시도해 주세요.                 # Generic error
+    loginCancelled: 로그인이 취소되었습니다. 다시 시도해 주세요!          # Cancelled message
+
+  # ========================================
+  # Account Selection - Email selection
+  # ========================================
+  accountSelection:
+    continue: 계속     # Button (account selection)
+    or: 또는 # Divider text
+    differentAccount: 다른 계정 사용                # Link (different account)
+
+  # ========================================
+  # Email Input - Email form
+  # ========================================
+  emailInput:
+    placeholder: 이메일   # Input placeholder
+    send: 보내기  # Submit button
+
+  # ========================================
+  # Error Pages - Generic error messages
+  # ========================================
+  errors:
+    internalServerError: 서버에 예상치 못한 오류가 발생했습니다. 나중에 다시 시도해 주세요.                              # 500 error
+    serviceUnavailable: 일시적으로 서비스를 이용할 수 없습니다. 잠시 후에 다시 시도해 주세요.                                   # 503 error
+    networkError: 서버에 연결할 수 없습니다. 인터넷 연결을 확인하고 다시 시도해 주세요.                                              # Network error
+    authenticationError: 인증 오류입니다. dbdiagram{'@'}holistics.io로 지원팀에 문의하세요.                              # Auth error
+    windowNotOpened: 이 창이 제대로 열리지 않았습니다. {clientName}(으)로 돌아가서 다시 시도하세요.                              # Window error
+    windowClosed: 원래 애플리케이션 창이 닫혔습니다. {clientName}(으)로 돌아가서 다시 시도하세요.                                     # Window closed error
+    communicationFailed: '{clientName}과(와) 통신하지 못했습니다. 다시 시도해 주세요'                 # Communication error
+    transferFailed: 인증 전송에 실패했습니다. 다시 시도해 주세요.                           # Transfer error
+    canCloseWindow: 이제 이 창을 닫아도 됩니다.               # Success message (close window)
+
+  # ========================================
+  # OAuth Errors - OAuth-specific errors
+  # ========================================
+  oauthErrors:
+    invalidAuthRequest: 잘못된 인증 요청                      # OAuth error
+    unsupportedResponseType: 지원되지 않는 response_type 매개변수          # OAuth error
+    invalidClient: 잘못된 클라이언트      # OAuth error
+    missingClientIdOrRedirectUri: client_id 또는 redirect_uri가 누락되었습니다.   # OAuth error
+    missingCodeChallenge: '필수 매개변수 누락: code_challenge'                 # OAuth error
+    missingState: '필수 매개변수 누락: 상태'                    # OAuth error
+    invalidAccess: 잘못된 접근        # OAuth error
+    pageMustBeOpened: 이 페이지는 애플리케이션에서 열어야 합니다.                       # OAuth error
+    unsupportedParameter: 지원되지 않는 {message} 매개변수          # OAuth error
+    unexpectedError: 예상치 못한 오류        # OAuth error

@@ -27,6 +27,7 @@ import ptBRMessages from '../dist/pt-BR.json' with { type: 'json' };
 import uzMessages from '../dist/uz.json' with { type: 'json' };
 import esMessages from '../dist/es.json' with { type: 'json' };
 import trMessages from '../dist/tr.json' with { type: 'json' };
+import koMessages from '../dist/ko.json' with { type: 'json' };
 
 // Build messages with namespaces
 export const messages = {
@@ -39,6 +40,7 @@ export const messages = {
   uz: uzMessages,
   es: esMessages,
   tr: trMessages,
+  ko: koMessages,
 };
 
 // NOTE: To add a new language:

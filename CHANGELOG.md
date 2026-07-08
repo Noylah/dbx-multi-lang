@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+### Added
+* Support for the Korean (ko) locale
+
 ## v1.2.3 (Jul 3, 2026)
 ### Misc
 * Add missing fr export in package.json
