@@ -6,7 +6,7 @@ billing:
   # Billing Buttons - Action buttons
   # ========================================
   buttons:
-    upgrade: "Passa a Pro" # Generic upgrade button
+    upgrade: "Aggiorna" # Generic upgrade button
     upgradeToPersonalPro: "Passa al piano Personal Pro" # CTA button (pricing page)
     collaborateWithTeam: "Collabora con il piano Team" # CTA button (team plan)
 

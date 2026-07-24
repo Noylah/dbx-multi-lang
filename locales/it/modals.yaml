@@ -26,7 +26,7 @@ modals:
     removeWorkspace:
     removeMember:
       title: "Rimuovi membro" # Remove member modal title
-      message: "Sei sicuro di voler rimuovere questo membro dallo spazio di lavoro?" # Remove member confirmation
+      message: "Confermi di voler rimuovere questo membro dallo spazio di lavoro?" # Remove member confirmation
       suggestion: "Digita la tua email per confermare." # Input prompt for confirmation
 
   # ========================================

@@ -54,7 +54,7 @@ workspace:
     removeWorkspaceTitle: "Rimuovere questo spazio di lavoro?" # Remove workspace modal title
     removeWorkspaceContent: "Pianificheremo la rimozione del tuo spazio di lavoro dopo 7 giorni. Puoi annullare la pianificazione di rimozione dello spazio di lavoro in questo menu \"Impostazioni\" se cambi idea." # Remove workspace modal content
     removeWorkspaceButton: "Rimuovi questo spazio di lavoro" # Confirm remove button
-    removeWorkspaceSuggestion: "Digita <i>permanently delete</i> nel campo di testo per confermare." # Confirmation input prompt
+    removeWorkspaceSuggestion: "Digita <i>elimina definitivamente</i> nel campo di testo per confermare." # Confirmation input prompt
     removalRequestCanceled: "Richiesta di rimozione annullata con successo!" # Success toast
     removalRequestCreated: "Richiesta di rimozione creata con successo!" # Success toast
     contactSupportError: "Si è verificato un errore, contatta il nostro supporto all'indirizzo dbdiagram@holistics.io" # Support contact message
@@ -83,7 +83,7 @@ workspace:
       removeTitle: "Rimuovere dallo spazio di lavoro?" # Remove dialog title
       removeMessage: "Stai per rimuovere <b>{email}</b> dal tuo spazio di lavoro, conferma la tua azione!" # Remove dialog message
     notifications:
-      removeSuccess: "{email} rimosso/a dallo spazio di lavoro con successo!" # Success toast
+      removeSuccess: "{email} è stato rimosso dallo spazio di lavoro con successo!" # Success toast
       removeError: "Impossibile rimuovere {email} dallo spazio di lavoro!" # Error toast
 
   # ========================================
@@ -172,7 +172,7 @@ workspace:
       revokeTitle: "Revocare il token API?" # Revoke confirmation title
       revokeContent: "Vuoi revocare il token API \"{name}\"? Questa azione non può essere annullata." # Revoke confirmation content
       revokePositive: "Revoca token" # Confirm revoke button
-      revokeSuggestion: "Digita <i>permanently delete</i> nel campo di testo per confermare." # Revoke input prompt
+      revokeSuggestion: "Digita <i>elimina definitivamente</i> nel campo di testo per confermare." # Revoke input prompt
       generateSuccess: "Token generato con successo" # Success toast
     errors:
       nameEmpty: "Il nome del token non può essere vuoto" # Validation error

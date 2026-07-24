@@ -68,7 +68,7 @@ common:
   # Upgrade prompts - Feature upgrade dialogs (shown when free users hit limits)
   # ========================================
   upgrade:
-    title: "Passa a Pro" # Modal title (gold star icon badge)
+    title: "Aggiorna" # Modal title (gold star icon badge)
 
   # ========================================
   # Quick actions - Keyboard shortcuts dialog (Ctrl/Cmd+K)

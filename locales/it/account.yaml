@@ -27,7 +27,7 @@ account:
     # Manage account section
     manageTitle: "Gestisci account" # Section title
     changeEmail: "Modifica indirizzo email" # Change email button label
-    changeEmailInProgress: "Hai una modifica dell'email in corso, attendere" # Disabled message when email change is in progress
+    changeEmailInProgress: "Hai una modifica dell'email in corso, attendi" # Disabled message when email change is in progress
     changeEmailFailed: "L'ultima modifica dell'email non è riuscita, contatta il nostro supporto all'indirizzo dbdiagram@holistics.io" # Disabled message when last email change failed
 
     # Account removal

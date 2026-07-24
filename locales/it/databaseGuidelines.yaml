@@ -59,7 +59,7 @@ databaseGuidelines:
     step2: "Apri SSMS e connettiti al tuo server SQL" # Instruction step 2
     step3: "Una volta connesso, fai clic con il tasto destro sul database da esportare e seleziona" # Instruction step 3 prefix
     scriptDatabaseAs: "Script Database come" # Menu option name
-    createTo: "CREATE in" # Menu option continuation
+    createTo: "CREATE To" # Menu option continuation
     newQueryEditorWindows: "Nuova finestra editor di query" # Sub-menu option
     step4: "Copia il contenuto del dump SQL e incollalo in questo modale" # Instruction step 4
 
